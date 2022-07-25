@@ -1,0 +1,19 @@
+section{background-color:#395B64 ; 
+    color:#FAFFAF;
+    text-align: center;
+
+}
+h1 {
+    color: #FFE5B4;
+}
+h2{
+    color: #E8AA42;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
