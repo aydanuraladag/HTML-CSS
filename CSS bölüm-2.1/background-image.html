@@ -16,19 +16,24 @@
         }
 
         #showcase { 
-            background-color: #2E4C6D; 
+            color:#fff;
+            background-image: url('2049.jpg');
+            background-position:center; 
+            text-align: center;
+           
             height: 500px;
             width: 100%;
             padding: 10px;
         }
        
         #how-it-works { 
-            background-color: #FC997C;
+            color:violet;
+            background-color:#2E4C6D;
             padding: 10px;
         }
 
         .main-header {
-            background-color: #FC997C;
+            background-color:thistle;
             padding: 8px 16px;
         }
 
@@ -59,7 +64,36 @@
             text-decoration: none;
             color: #fff;
         }
-       
+
+        .main-nav__item a:hover, .main-nav__item:hover::before {
+           color: #2E4C6D;
+        }
+      
+        .main-nav__item:active::before, .main-nav__item a:active {
+           color: #fff;
+        }
+    
+        .main-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+        .main-nav_item__login a {
+            color: #fff;
+            background-color: #2E4C6D;
+            padding:4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+        .main-nav_item__login a:hover {
+            color:#2E4C6D;
+            border: 2px solid #2E4C6D;
+            background-color: #fff;
+        }
+
+        .main-nav_item__login::before {
+            content: none;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -69,13 +103,13 @@
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="#">Home</a>
+                    <a href="#">Filmler</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#">Movies</a>
+                    <a href="#">Diziler</a>
                 </li>
-                <li class="main-nav__item">
-                    <a href="#">Contact</a>
+                <li class="main-nav__item main-nav_item__login">
+                    <a href="#">Login</a>
                 </li>
             </ul>
         </nav>
