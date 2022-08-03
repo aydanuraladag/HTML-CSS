@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+           /* text-align: right; /*inline ve inline-block olduğunda kullanabilirz.*/
+            background-color: antiquewhite;
+
+        }
+
+        .box{
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+        /*display: inline-block; /*-->Üzerinde genişlik ve yükseklik ayarlamaya izin verir.*/
+        /*display: inline; /*İnline elemanlar içerik kadar yer kaplarlar.*/
+        float: right;
+        }
+        #box1{
+            float: left;
+        }
+    </style> 
+</head>
+<body>
+    <div id="container">
+    <div class="box" id="box1">kutu 1</div>
+    <div class="box">kutu 2</div>
+    <div class="box">kutu 3</div>
+</div>
+</body>
+</html>

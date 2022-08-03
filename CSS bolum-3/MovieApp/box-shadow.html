@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+      
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        #showcase { 
+            color:#fff;
+            background-image: url('https://images.squarespace-cdn.com/content/v1/540efafce4b02e0dc20adb52/1508514915782-Q7TJSL9DWBAGFCRUDMWK/Ryan-Gosling-and-Giant-Hologram-in-Blade-Runner-2049.jpg?format=2500w');
+            background-size: cover;
+            background-position: center;
+            
+            
+            text-align: center;
+           
+            height: 650px;
+            width: 100%;
+            padding: 10px;
+        }
+       
+      
+
+        .main-header {
+            background-color:black;
+            padding: 8px 16px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 99px);
+            text-align: right;
+        }
+        .main-nav__items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav__item {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-nav__item a:hover, .main-nav__item:hover::before {
+           color: #2E4C6D;
+        }
+      
+        .main-nav__item:active::before, .main-nav__item a:active {
+           color: #fff;
+        }
+    
+        .main-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+        .main-nav_item__login a {
+            color: #fff;
+            background-color:transparent;
+            padding:4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            transition-duration: .6s;
+        }
+        .main-nav_item__login a:hover {
+            color:#2E4C6D;
+            border: 2px solid #913156;
+            background-color: #fff;
+        }
+
+        .main-nav_item__login::before {
+            content: none;
+            color: #fff;
+        }
+        #how-it-works { 
+            color:#fff;
+            background-color:#2f4779;
+            padding: 10px;
+            text-align: center;
+            border-top:3px solid thistle;
+             height:400px;
+        }
+        .row {
+            
+            text-align: center;
+           
+        }
+        .col-3 {
+            display: inline-block;
+            width: 30%;
+            padding: 16px;
+        }
+
+        .col-2 {
+            display: inline-block;
+            width: 50%;
+            height: 400px;
+            border: 10px solid #2E4C6D;
+         }
+
+        .icon-box h3 {
+            color: #3e4555;
+            font-size: 26px;
+        }
+
+      
+        
+        .features__left {
+            background: url("https://static.boxofficeturkiye.com/news/1350x675/4131-0bivR.png");
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .features__right {
+            background-color:#d2e0ed;
+            padding: 75px;
+            vertical-align: top;
+        }
+
+        .features__right h3 {
+            font-size: 30px;
+        }
+
+        #features a {
+            background-color: #e14b42;
+            color: #fff;
+            padding: 7px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid #FC997C;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 15px;
+            transition-duration: .6s;
+        }
+
+        #features a:hover {
+            border: 1px solid #FC997C;
+            color: #e14b42;
+            background-color: #fff;
+        }
+        .section-title {
+            text-align: center;
+            color:#dadbed ;
+
+        }
+        #plans{
+            background-image: url(https://images.hdqwalls.com/wallpapers/the-big-universe-is-here-4k-q4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-color:#2f4779;
+            border-top: 2px solid #2f4779;
+            
+        }
+        .plan {
+
+            color:white;
+            text-align: center;
+            padding: 16px;
+            width: 33.3%;
+            float: left;
+
+        }
+        .plan__badge{
+            background-color:#ad98e2 ;
+            opacity: 0.5;
+            color:#e14b42;
+            padding: 8px;
+            border-radius: 8px;
+
+        }
+        
+        .inner-plan{
+            background-color: transparent;
+            padding: 25px 10px;
+            border: 5px solid #d2e0ed;
+            border-radius: 10px;
+            box-shadow: -5px -10px 20px 5px #a52b52, 5px 10px 20px 5px #6e68c0;
+            transition: box-shadow .3s;
+        }
+        .inner-plan:hover{
+            box-shadow: -5px -5px 30px 5px #ffd08e, 5px 5px 30px 5px #ff8907;
+             
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .container{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .button-plans{
+            padding: 10px;
+            background-color:#e14b42;
+            color:#d2e0ed;
+            border: 2px solid #dadbed;
+            border-radius: 10px;
+            cursor: pointer;
+            transition-duration: .6s;
+        }
+        .button-plans:hover{
+            background-color: #fff;
+            color: #e14b42;
+            opacity: 0.7;
+        }
+        .plan ul{
+            padding: 0;
+            list-style-type: none;
+        }
+      
+
+    </style>
+</head>
+<body>
+
+   <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav_item__login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+
+   <main>
+       <section id="showcase">
+           <h1>Welcome to MovieApp</h1>
+       </section>
+       <section id="how-it-works">
+        <div class="row">
+           <h2>How it works?</h2>
+           <p>We will show you step by step how to start watchnig your favorite 
+            movies & TV shovs starting now'</p>
+        
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>
+                <h3>Register</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sapiente nemo iure vero ex animi? Aut!</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-buffer fa-3x"></i>
+                <h3>Choose a Plan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sapiente nemo iure vero ex animi? Aut!</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-regular fa-face-smile fa-3x"></i>
+                <h3>Enjoy Movies</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sapiente nemo iure vero ex animi? Aut!</p>
+            </div>
+        </div>
+       </section>
+       <section id="features">
+        <div class="row">
+            <div class="col-2 features__left"></div><div class="col-2 features__right">
+                <h3>Watch all Movies & TV Shows once they get released!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam deserunt quaerat? Doloremque expedita repellendus adipisci eligendi nobis illum! Perferendis ab blanditiis eius iste incidunt esse numquam asperiores hic suscipit.</p>
+                <a href="#">View Features</a>
+            </div>
+        </div>
+    </section>
+    <section id="plans">
+        <div class="row">
+        <h2 class="section-title">Become a Premium Member</h2>
+        <div class="container clearfix">
+            <div class="plan">
+                <div class="inner-plan">
+                    <h2>Free</h2>
+                    <h3>0/month</h3>
+                    <ul>
+                        <li>HD available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone & tablet</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>first  month Free</li>
+                    </ul>
+                <div>
+                    <button class="button-plans">Choose Plan</button>
+                </div>
+            </div>
+            </div>
+            <div class="plan">
+                <div class="inner-plan">
+                    <h2 class="plan__badge">Recommended</h2>
+                    <h2>Basic</h2>
+                    <h3>$9.99/month</h3>
+                    <ul>
+                        <li>HD available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone & tablet</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>first  month Free</li>
+                    </ul>
+                <div>
+                    <button class="button-plans">Choose Plan</button>
+                </div> 
+            </div>
+        </div>
+            <div class="plan">
+                <div class="inner-plan">
+                    <h2>Premium</h2>
+                    <h3>$19.99/month</h3>
+                    <ul>
+                        <li>HD available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone & tablet</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>first  month Free</li>
+                    </ul>
+             <div>
+                <button class="button-plans">Choose Plan</button>
+            </div>
+         </div>
+        </div>
+     </div>
+    </section>
+   </main>
+
+</body>
+</html>
