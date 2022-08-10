@@ -25,7 +25,7 @@ body {
 
 
 .main-header {
-    background-color:black;
+    background-color:#130e16;
     padding: 8px 16px;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .main-nav__item a {
     text-decoration: none;
-    color: #fff;
+    color: #ffdcf4;
 }
 
 .main-nav__item a:hover, .main-nav__item:hover::before {
@@ -67,20 +67,21 @@ body {
 
 .main-nav__item::before {
     content: '\2022';
-    color: #fff;
+    color:#fff;
 }
 .main-nav_item__login a {
-    color: #fff;
+    color: #ffdcf4;
     background-color:transparent;
+    background-image: url(https://media.istockphoto.com/photos/background-of-galaxy-and-stars-picture-id1035676256?k=20&m=1035676256&s=170667a&w=0&h=z_l2R1_XsBbZy6n6rOr71DqkQq4mEGpuOxzzCgoVMgM=);
     padding:4px 16px;
     border-radius: 8px;
-    border: 2px solid #fff;
+    border: 2px solid #ffdcf4;
     transition-duration: .6s;
 }
 .main-nav_item__login a:hover {
-    color:#2E4C6D;
+    color:#ffdcf4;
     border: 2px solid #913156;
-    background-color: #fff;
+    background-color:#913156;
 }
 
 .main-nav_item__login::before {
@@ -166,6 +167,7 @@ body {
     background-position: center;
     background-color:#2f4779;
     border-top: 2px solid #2f4779;
+    margin: 0px;
     
 }
 .plan {
