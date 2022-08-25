@@ -15,7 +15,7 @@
             /*Arka plan görüntüsü tekrarlanmaz.*/
             background-repeat: no-repeat;
             background-size: contain;
-            /*Contain özelliği ile resmin orjinal en boy oranı korunur ve dışta kalan kısımlar crop edilir.*/
+            /*Contain özelliği ile resmin orjinal en boy oranı korunur ve dışta kalan kısımlar crop edilir. */
             
         }
         
