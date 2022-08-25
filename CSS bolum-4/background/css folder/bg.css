@@ -10,12 +10,12 @@
         #header {
             position: relative;
             background-color: red;
-            background-image: url(../image/bg.jpg);
+            background-image: url(../image/background.jpg);
             background-size: 1930px;
             height: 100vh;
             /* viewport - heigt:  kullanıcın görmüş olduğu yüksekliği ... kapla */
             /* width: 100vw; */
-            /* view - width: görünen alanın yüzde 80'ini almak */
+            /* view - width: görünen alanın yüzde 80'ini almak  */
         }
         
         #header h1 {
