@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+    /* zemine eklenen resmin sayfa ile scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.*/
+    background-attachment: fixed;
+}
+
+.bg-image1 {
+    height: 100vh;
+    background-image: url(../images/bg-2.jpeg);
+  
+}
+.bg-image2 {
+    height: 50vh;
+    background-image: url(../images/bg-3.jpeg);
+
+}
+.caption{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    
+}
+.caption .border {
+    background-color:black ;
+    color: white;
+    padding: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+}
+.box{
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+}
