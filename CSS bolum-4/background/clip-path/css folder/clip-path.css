@@ -1,0 +1,32 @@
+
+         body {
+            margin: 0;
+        
+        }
+        
+        #header {
+            position: relative;
+            background-color: red;
+            background-image: url(./images/background.jpg);
+            background-size: 1930px;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*bir elementin (div, img vb.) üzerine bir şekil ekleyerek geri kalan kısmın kesilerek görünmez olmasını sağlar.*/
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+            
+        }
+        
+        #header h1 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: red;
+        
+        }
+    
