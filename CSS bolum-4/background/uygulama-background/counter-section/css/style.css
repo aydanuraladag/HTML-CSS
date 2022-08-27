@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#showcase { 
+    color:#fff;
+    background-image:url('https://images.squarespace-cdn.com/content/v1/540efafce4b02e0dc20adb52/1508514915782-Q7TJSL9DWBAGFCRUDMWK/Ryan-Gosling-and-Giant-Hologram-in-Blade-Runner-2049.jpg?format=2500w');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+#showcase .content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 19px;
+    font-weight: lighter;
+    background: rgba(102, 153, 153, 0.2);
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    
+    
+}
+
+
+.main-header {
+    background: linear-gradient(to bottom,#ff6666 0%,#993399 100%););
+    padding: 8px 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 99px);
+    text-align: right;
+}
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #ffdcf4;
+}
+
+.main-nav__item a:hover, .main-nav__item:hover::before {
+   color:#b797fa;
+}
+
+.main-nav__item:active::before, .main-nav__item a:active {
+   color: #fff;
+}
+
+.main-nav__item::before {
+    content: '\2022';
+    color:#fff;
+}
+.main-nav_item__login a {
+    color: #ffdcf4;
+    background-color:transparent;
+    background-image: url(https://media.istockphoto.com/photos/background-of-galaxy-and-stars-picture-id1035676256?k=20&m=1035676256&s=170667a&w=0&h=z_l2R1_XsBbZy6n6rOr71DqkQq4mEGpuOxzzCgoVMgM=);
+    padding:4px 16px;
+    border-radius: 5px;
+    border: 1px solid #ffdcf4;
+    transition-duration: .6s;
+}
+.main-nav_item__login a:hover {
+    color:#ad98e2 ;
+    border: 1px solid #2f4779;
+    background-color:#2f4779;
+}
+
+.main-nav_item__login::before {
+    content: none;
+    color: #fff;
+}
+#how-it-works { 
+    color:#fff;
+    background-color:#2f4779;
+    padding: 10px;
+    text-align: center;
+    border-top:3px solid thistle;
+     height:400px;
+}
+.row {
+    
+    text-align: center;
+   
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-3 {
+    float: left;
+    width: 33.3%;
+}
+.col-2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+
+
+
+.icon-box h3 {
+    color: #3e4555;
+    font-size: 26px;
+}
+
+
+
+.features__left {
+    background: url("https://static.boxofficeturkiye.com/news/1350x675/4131-0bivR.png");
+    background-size: cover;
+    background-position: top center;
+}
+
+.features__right {
+    background-color:#d2e0ed;
+    padding: 75px;
+    vertical-align: top;
+}
+.features__left
+.features__right {
+    height: 350px;
+}
+
+.features__right h3 {
+    font-size: 30px;
+}
+
+#features a {
+    background-color: #e14b42;
+    color: #fff;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #FC997C;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    transition-duration: .6s;
+}
+
+#features a:hover {
+    border: 1px solid #FC997C;
+    color: #e14b42;
+    background-color: #fff;
+}
+.section-title {
+    text-align: center;
+    color:#dadbed ;
+
+}
+#plans{
+    background-image: url(https://images.hdqwalls.com/wallpapers/the-big-universe-is-here-4k-q4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color:#2f4779;
+    border-top: 2px solid #2f4779;
+    margin: 0px;
+    
+}
+.plan {
+
+    color:white;
+    text-align: center;
+    padding: 16px;
+
+}
+.plan__badge{
+    background-color:#ad98e2 ;
+    opacity: 0.5;
+    color:#e14b42;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.inner-plan{
+    background-color: transparent;
+    padding: 25px 10px;
+    border: 5px solid #d2e0ed;
+    border-radius: 10px;
+    box-shadow: -5px -10px 20px 5px #a52b52, 5px 10px 20px 5px #6e68c0;
+    transition: box-shadow .3s;
+}
+.inner-plan:hover{
+    box-shadow: -5px -5px 30px 5px #ffd08e, 5px 5px 30px 5px #ff8907;
+     
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+.button-plans{
+    padding: 10px;
+    background-color:#e14b42;
+    color:#d2e0ed;
+    border: 2px solid #dadbed;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: .6s;
+}
+.button-plans:hover{
+    background-color: #fff;
+    color: #e14b42;
+    opacity: 0.7;
+}
+.plan ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#backtotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+#backtotop i{
+    color: #6e68c0;
+    font-size: 40px;
+    transition: 0.6s;
+
+}
+#backtotop i:hover{
+    color: #d6efed;
+}
+.counter{
+    background: linear-gradient(to bottom,#ff6666 0%,#993399 100%);
+    text-align: center;
+}
+.counter-item{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+.counter h4{
+    color: #fff;
+  
+}
