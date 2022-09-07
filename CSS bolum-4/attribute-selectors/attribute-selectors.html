@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*attribute value selector*/
+       /*a[class="active"] {
+            background-color: blue;
+        } */
+        /* attribute '*' selector:içinde active bulunan bütün elemanları kapsar.Active kelimesini ilgili attribute içersinde arar.*/
+        /*[class*="active"] {
+            background-color: blue;
+        } */
+        /*attribute '~' selector:active'i seçer ama active'in yazıldığı gibi olması gerekir.Önünde veya arkasında .,- vb. işaretler olursa seçmez.*/
+        /*[class~="active"] {
+            background-color: blue;
+        }*/
+        /* attribute '|' selector:İlgili value bilgisi sadece başlangıçta olanlar seçilir.Arada boşluk kabul etmez. */
+        /*[class|="active"] {
+            background-color: blue;
+        }*/
+        /* attribute '^' selector:İlgili value bilgisi sadece başlangıçta olanlar seçilir.Arada boşluk kabul eder.*/
+       /* [class^="active"] {
+            background-color: blue;
+        }*/
+        /* attribute '$' selector:active class'ını sonda arar.*/
+        [class$="active"] {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span class="active-span text">text</span>
+    <nav>
+        <a href="" target="_blank">Home</a>
+        <a href="" class="active">About</a>
+        <a href="" class="link active">Contact</a>
+    </nav>
+    
+</body>
+</html>
