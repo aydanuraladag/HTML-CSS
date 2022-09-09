@@ -1,0 +1,107 @@
+#body{
+    background-image: url(../images/pexels-roberto-nickson-2559941.jpg);
+    background-size: cover;
+   
+}
+.signup-page{
+    padding-top: 60px;
+}
+.signup-title {
+    text-align: center;
+    font-size: 30px;
+    color: #336600;
+    
+}
+.signup-form {
+    color: #f2ffe6;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+   
+
+}
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+.signup-form select
+{
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label{
+    display: inline-block;
+    width: auto
+}
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 15px;
+}
+footer{
+    background: #193300;
+}
+.main-header {
+    background-color: rgba(25, 51, 0,0.2);
+   
+    
+}
+#backtotop i{
+    color: #336600;
+}
+
+a{
+    color:#f2ffe6;
+}
+.main-nav__item a:hover, .main-nav__item:hover::before {
+    color:#ffe6cc;
+ }
+ .main-nav__item a {
+    color: #f2ffe6;
+}
+.main-nav_item__login a:hover {
+   
+    background-color:rgba(102, 153, 153,0.2);
+   
+}
+footer{
+    position: relative;
+    bottom: -379px;
+}
+input{
+    background-color:seashell
+}
+/*Tipi checkbox olanlar hariç bütün inputları seçer.*/
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid seashell;
+    padding: 10px;
+}
+/*Bir inputun üzerine geldiğinde, inputun etrafını bir kenarlık ile sarar.*/
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus{
+    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    outline: none;
+
+}
+/*Tipi checkbox olan inputları seçer*/
+.signup-form input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #336600;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+/*Tipi checkbox olan inputların üzerine gelindiğinde ki özellikleri belirlermemizi sağlar.*/
+.signup-form input[type="checkbox"]:hover{
+    background:#d1e0e0 ;
+}
+/*Tipi checkbox olan inputların üzerine gelindiğinde :checked seçicisini kullanarak bir öğeyi seçilmiş (veya seçilmemiş) durumuna göre hedefleyebiliyoruz.*/
+.signup-form input[type="checkbox"]:checked {
+    background-color: #336600;
+}
