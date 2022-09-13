@@ -1,0 +1,65 @@
+ body {
+            background-color: gray;
+        }
+
+        h1 {
+            display: none;
+        }
+        /* @media:farklı ekran ve ortamlar için farklı stil tanımlamayı sağlar.*/
+          /* landscape */
+        @media (max-width: 575px) {
+            #phone h1 {
+                display: block;
+            }          
+        }
+
+        /* landscape */
+        @media (min-width: 576px) and (max-width: 767px) {
+            #landscape h1 {
+                display: block;
+            }
+
+            body {
+                background-color: green;
+            }
+        }
+
+        /* tablets */
+        @media (min-width: 768px) and (max-width: 991px) {
+            #tablets h1 {
+                display: block;
+            }
+            body {
+                background-color: red;
+            }
+        }
+
+        /* desktop */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            #desktop h1 {
+                display: block;
+            }
+            body {
+                background-color: yellow;
+            }
+        }
+
+        /* large desktop */
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            #large h1 {
+                display: block;
+            }
+            body {
+                background-color: orange;
+            }
+        }
+
+        /* xlarge desktop */
+        @media (min-width: 1400px) {
+            #xlarge h1 {
+                display: block;
+            }
+            body {
+                background-color: pink;
+            }
+        }
